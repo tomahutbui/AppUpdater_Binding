@@ -1,0 +1,8 @@
+E:\Libraries\AppUpdaterBinding\App1\AppUpdaterBinding\obj\Release\__AndroidLibraryProjects__.zip
+E:\Libraries\AppUpdaterBinding\App1\AppUpdaterBinding\obj\Release\MonoAndroid,Version=v11.0.AssemblyAttributes.cs
+E:\Libraries\AppUpdaterBinding\App1\AppUpdaterBinding\obj\Release\stamp\_BuildLibraryImportsCache.stamp
+E:\Libraries\AppUpdaterBinding\App1\AppUpdaterBinding\obj\Release\AppUpdaterBinding.csproj.CoreCompileInputs.cache
+E:\Libraries\AppUpdaterBinding\App1\AppUpdaterBinding\bin\Release\AppUpdaterBinding.dll
+E:\Libraries\AppUpdaterBinding\App1\AppUpdaterBinding\bin\Release\AppUpdaterBinding.pdb
+E:\Libraries\AppUpdaterBinding\App1\AppUpdaterBinding\obj\Release\AppUpdaterBinding.dll
+E:\Libraries\AppUpdaterBinding\App1\AppUpdaterBinding\obj\Release\AppUpdaterBinding.pdb

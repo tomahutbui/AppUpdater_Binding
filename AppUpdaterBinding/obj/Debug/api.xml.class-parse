@@ -1,0 +1,3867 @@
+<api
+  api-source="class-parse">
+  <package
+    name="com.github.javiersantos.appupdater"
+    jni-name="com/github/javiersantos/appupdater">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="AppUpdater"
+      jni-signature="Lcom/github/javiersantos/appupdater/AppUpdater;"
+      source-file-name="AppUpdater.java"
+      static="false"
+      visibility="public">
+      <implements
+        name="com.github.javiersantos.appupdater.interfaces.IAppUpdater"
+        name-generic-aware="com.github.javiersantos.appupdater.interfaces.IAppUpdater"
+        jni-type="Lcom/github/javiersantos/appupdater/interfaces/IAppUpdater;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AppUpdater"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="dismiss"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="init"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/github/javiersantos/appupdater/AppUpdater;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonDismiss"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="textResource"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonDismiss"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="text"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonDismissClickListener"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/DialogInterface$OnClickListener;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="clickListener"
+          type="android.content.DialogInterface.OnClickListener"
+          jni-type="Landroid/content/DialogInterface$OnClickListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonDoNotShowAgain"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="textResource"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonDoNotShowAgain"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="text"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonDoNotShowAgainClickListener"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/DialogInterface$OnClickListener;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="clickListener"
+          type="android.content.DialogInterface.OnClickListener"
+          jni-type="Landroid/content/DialogInterface$OnClickListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonUpdate"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="textResource"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonUpdate"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="text"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonUpdateClickListener"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/DialogInterface$OnClickListener;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="clickListener"
+          type="android.content.DialogInterface.OnClickListener"
+          jni-type="Landroid/content/DialogInterface$OnClickListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setCancelable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Boolean;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="isDialogCancelable"
+          type="java.lang.Boolean"
+          jni-type="Ljava/lang/Boolean;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setContentOnUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="textResource"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setContentOnUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="description"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setContentOnUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="textResource"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setContentOnUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="description"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogButtonDismiss"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="textResource"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogButtonDismiss"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="text"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogButtonDoNotShowAgain"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="textResource"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogButtonDoNotShowAgain"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="text"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogButtonUpdate"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="textResource"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogButtonUpdate"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="text"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogDescriptionWhenUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="textResource"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogDescriptionWhenUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="description"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogDescriptionWhenUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="textResource"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogDescriptionWhenUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="description"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogTitleWhenUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="textResource"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogTitleWhenUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="title"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogTitleWhenUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="textResource"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogTitleWhenUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="title"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setDisplay"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/enums/Display;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="display"
+          type="com.github.javiersantos.appupdater.enums.Display"
+          jni-type="Lcom/github/javiersantos/appupdater/enums/Display;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setDuration"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/enums/Duration;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="duration"
+          type="com.github.javiersantos.appupdater.enums.Duration"
+          jni-type="Lcom/github/javiersantos/appupdater/enums/Duration;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setGitHubUserAndRepo"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="user"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="repo"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setIcon"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="iconRes"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setTitleOnUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="textResource"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setTitleOnUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="title"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setTitleOnUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="textResource"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setTitleOnUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="title"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setUpdateFrom"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/enums/UpdateFrom;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="updateFrom"
+          type="com.github.javiersantos.appupdater.enums.UpdateFrom"
+          jni-type="Lcom/github/javiersantos/appupdater/enums/UpdateFrom;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setUpdateJSON"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="jsonUrl"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setUpdateXML"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="xmlUrl"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="showAppUpdated"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Boolean;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="res"
+          type="java.lang.Boolean"
+          jni-type="Ljava/lang/Boolean;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="showEvery"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Integer;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="times"
+          type="java.lang.Integer"
+          jni-type="Ljava/lang/Integer;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="start"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="stop"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lcom/github/javiersantos/appupdater/AppUpdater;"
+      enclosing-method-name="start"
+      enclosing-method-signature="()V"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="AppUpdater.1"
+      jni-signature="Lcom/github/javiersantos/appupdater/AppUpdater$1;"
+      source-file-name="AppUpdater.java"
+      static="false"
+      visibility="">
+      <implements
+        name="com.github.javiersantos.appupdater.interfaces.IAppUpdater.LibraryListener"
+        name-generic-aware="com.github.javiersantos.appupdater.interfaces.IAppUpdater.LibraryListener"
+        jni-type="Lcom/github/javiersantos/appupdater/interfaces/IAppUpdater$LibraryListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onFailed"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;)V">
+        <parameter
+          name="error"
+          type="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+          jni-type="Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onSuccess"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/objects/Update;)V">
+        <parameter
+          name="update"
+          type="com.github.javiersantos.appupdater.objects.Update"
+          jni-type="Lcom/github/javiersantos/appupdater/objects/Update;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lcom/github/javiersantos/appupdater/AppUpdater;"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="AppUpdater.2"
+      jni-signature="Lcom/github/javiersantos/appupdater/AppUpdater$2;"
+      source-file-name="AppUpdater.java"
+      static="true"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="AppUpdaterUtils"
+      jni-signature="Lcom/github/javiersantos/appupdater/AppUpdaterUtils;"
+      source-file-name="AppUpdaterUtils.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AppUpdaterUtils"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setGitHubUserAndRepo"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdaterUtils"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdaterUtils;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdaterUtils;">
+        <parameter
+          name="user"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="repo"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setUpdateFrom"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdaterUtils"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdaterUtils;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/enums/UpdateFrom;)Lcom/github/javiersantos/appupdater/AppUpdaterUtils;">
+        <parameter
+          name="updateFrom"
+          type="com.github.javiersantos.appupdater.enums.UpdateFrom"
+          jni-type="Lcom/github/javiersantos/appupdater/enums/UpdateFrom;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setUpdateJSON"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdaterUtils"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdaterUtils;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdaterUtils;">
+        <parameter
+          name="jsonUrl"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setUpdateXML"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdaterUtils"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdaterUtils;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdaterUtils;">
+        <parameter
+          name="xmlUrl"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="start"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="stop"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="withListener"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdaterUtils"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdaterUtils;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/AppUpdaterUtils$AppUpdaterListener;)Lcom/github/javiersantos/appupdater/AppUpdaterUtils;">
+        <parameter
+          name="appUpdaterListener"
+          type="com.github.javiersantos.appupdater.AppUpdaterUtils.AppUpdaterListener"
+          jni-type="Lcom/github/javiersantos/appupdater/AppUpdaterUtils$AppUpdaterListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="withListener"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdaterUtils"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdaterUtils;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/AppUpdaterUtils$UpdateListener;)Lcom/github/javiersantos/appupdater/AppUpdaterUtils;">
+        <parameter
+          name="updateListener"
+          type="com.github.javiersantos.appupdater.AppUpdaterUtils.UpdateListener"
+          jni-type="Lcom/github/javiersantos/appupdater/AppUpdaterUtils$UpdateListener;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lcom/github/javiersantos/appupdater/AppUpdaterUtils;"
+      enclosing-method-name="start"
+      enclosing-method-signature="()V"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="AppUpdaterUtils.1"
+      jni-signature="Lcom/github/javiersantos/appupdater/AppUpdaterUtils$1;"
+      source-file-name="AppUpdaterUtils.java"
+      static="false"
+      visibility="">
+      <implements
+        name="com.github.javiersantos.appupdater.interfaces.IAppUpdater.LibraryListener"
+        name-generic-aware="com.github.javiersantos.appupdater.interfaces.IAppUpdater.LibraryListener"
+        jni-type="Lcom/github/javiersantos/appupdater/interfaces/IAppUpdater$LibraryListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onFailed"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;)V">
+        <parameter
+          name="error"
+          type="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+          jni-type="Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onSuccess"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/objects/Update;)V">
+        <parameter
+          name="update"
+          type="com.github.javiersantos.appupdater.objects.Update"
+          jni-type="Lcom/github/javiersantos/appupdater/objects/Update;" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="deprecated"
+      final="false"
+      name="AppUpdaterUtils.AppUpdaterListener"
+      jni-signature="Lcom/github/javiersantos/appupdater/AppUpdaterUtils$AppUpdaterListener;"
+      source-file-name="AppUpdaterUtils.java"
+      static="true"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onFailed"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;)V">
+        <parameter
+          name="p0"
+          type="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+          jni-type="Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onSuccess"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/Boolean;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.Boolean"
+          jni-type="Ljava/lang/Boolean;" />
+      </method>
+    </interface>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="AppUpdaterUtils.UpdateListener"
+      jni-signature="Lcom/github/javiersantos/appupdater/AppUpdaterUtils$UpdateListener;"
+      source-file-name="AppUpdaterUtils.java"
+      static="true"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onFailed"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;)V">
+        <parameter
+          name="p0"
+          type="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+          jni-type="Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onSuccess"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/objects/Update;Ljava/lang/Boolean;)V">
+        <parameter
+          name="p0"
+          type="com.github.javiersantos.appupdater.objects.Update"
+          jni-type="Lcom/github/javiersantos/appupdater/objects/Update;" />
+        <parameter
+          name="p1"
+          type="java.lang.Boolean"
+          jni-type="Ljava/lang/Boolean;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="BuildConfig"
+      jni-signature="Lcom/github/javiersantos/appupdater/BuildConfig;"
+      source-file-name="BuildConfig.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="BuildConfig"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="BUILD_TYPE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;debug&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DEBUG"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="boolean"
+        type-generic-aware="boolean"
+        jni-signature="Z"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="LIBRARY_PACKAGE_NAME"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;com.github.javiersantos.appupdater&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="Config"
+      jni-signature="Lcom/github/javiersantos/appupdater/Config;"
+      source-file-name="Config.java"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="DisableClickListener"
+      jni-signature="Lcom/github/javiersantos/appupdater/DisableClickListener;"
+      source-file-name="DisableClickListener.java"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.content.DialogInterface.OnClickListener"
+        name-generic-aware="android.content.DialogInterface.OnClickListener"
+        jni-type="Landroid/content/DialogInterface$OnClickListener;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="DisableClickListener"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onClick"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/DialogInterface;I)V">
+        <parameter
+          name="dialog"
+          type="android.content.DialogInterface"
+          jni-type="Landroid/content/DialogInterface;" />
+        <parameter
+          name="which"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lorg/xml/sax/helpers/DefaultHandler;"
+      extends="org.xml.sax.helpers.DefaultHandler"
+      extends-generic-aware="org.xml.sax.helpers.DefaultHandler"
+      final="false"
+      name="HandlerXML"
+      jni-signature="Lcom/github/javiersantos/appupdater/HandlerXML;"
+      source-file-name="HandlerXML.java"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="characters"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([CII)V">
+        <parameter
+          name="ch"
+          type="char[]"
+          jni-type="[C" />
+        <parameter
+          name="start"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="length"
+          type="int"
+          jni-type="I" />
+        <exception
+          name="org/xml/sax/SAXException"
+          type="org.xml.sax.SAXException"
+          type-generic-aware="org.xml.sax.SAXException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="endElement"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="uri"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="localName"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="org/xml/sax/SAXException"
+          type="org.xml.sax.SAXException"
+          type-generic-aware="org.xml.sax.SAXException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getUpdate"
+        native="false"
+        return="com.github.javiersantos.appupdater.objects.Update"
+        jni-return="Lcom/github/javiersantos/appupdater/objects/Update;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/github/javiersantos/appupdater/objects/Update;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="startDocument"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V">
+        <exception
+          name="org/xml/sax/SAXException"
+          type="org.xml.sax.SAXException"
+          type-generic-aware="org.xml.sax.SAXException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="startElement"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V">
+        <parameter
+          name="uri"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="localName"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="attributes"
+          type="org.xml.sax.Attributes"
+          jni-type="Lorg/xml/sax/Attributes;" />
+        <exception
+          name="org/xml/sax/SAXException"
+          type="org.xml.sax.SAXException"
+          type-generic-aware="org.xml.sax.SAXException" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="LibraryPreferences"
+      jni-signature="Lcom/github/javiersantos/appupdater/LibraryPreferences;"
+      source-file-name="LibraryPreferences.java"
+      static="false"
+      visibility="">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="LibraryPreferences"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getAppUpdaterShow"
+        native="false"
+        return="java.lang.Boolean"
+        jni-return="Ljava/lang/Boolean;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/Boolean;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSuccessfulChecks"
+        native="false"
+        return="java.lang.Integer"
+        jni-return="Ljava/lang/Integer;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/Integer;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setAppUpdaterShow"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Boolean;)V">
+        <parameter
+          name="res"
+          type="java.lang.Boolean"
+          jni-type="Ljava/lang/Boolean;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setSuccessfulChecks"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Integer;)V">
+        <parameter
+          name="checks"
+          type="java.lang.Integer"
+          jni-type="Ljava/lang/Integer;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="ParserJSON"
+      jni-signature="Lcom/github/javiersantos/appupdater/ParserJSON;"
+      source-file-name="ParserJSON.java"
+      static="false"
+      visibility="">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ParserJSON"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="url"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="parse"
+        native="false"
+        return="com.github.javiersantos.appupdater.objects.Update"
+        jni-return="Lcom/github/javiersantos/appupdater/objects/Update;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/github/javiersantos/appupdater/objects/Update;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="ParserXML"
+      jni-signature="Lcom/github/javiersantos/appupdater/ParserXML;"
+      source-file-name="ParserXML.java"
+      static="false"
+      visibility="">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ParserXML"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="url"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="parse"
+        native="false"
+        return="com.github.javiersantos.appupdater.objects.Update"
+        jni-return="Lcom/github/javiersantos/appupdater/objects/Update;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/github/javiersantos/appupdater/objects/Update;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="UpdateClickListener"
+      jni-signature="Lcom/github/javiersantos/appupdater/UpdateClickListener;"
+      source-file-name="UpdateClickListener.java"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.content.DialogInterface.OnClickListener"
+        name-generic-aware="android.content.DialogInterface.OnClickListener"
+        jni-type="Landroid/content/DialogInterface$OnClickListener;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="UpdateClickListener"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Lcom/github/javiersantos/appupdater/enums/UpdateFrom;Ljava/net/URL;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="updateFrom"
+          type="com.github.javiersantos.appupdater.enums.UpdateFrom"
+          jni-type="Lcom/github/javiersantos/appupdater/enums/UpdateFrom;" />
+        <parameter
+          name="apk"
+          type="java.net.URL"
+          jni-type="Ljava/net/URL;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onClick"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/DialogInterface;I)V">
+        <parameter
+          name="dialog"
+          type="android.content.DialogInterface"
+          jni-type="Landroid/content/DialogInterface;" />
+        <parameter
+          name="which"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="UtilsAsync"
+      jni-signature="Lcom/github/javiersantos/appupdater/UtilsAsync;"
+      source-file-name="UtilsAsync.java"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/os/AsyncTask;"
+      extends="android.os.AsyncTask"
+      extends-generic-aware="android.os.AsyncTask&lt;java.lang.Void, java.lang.Void, com.github.javiersantos.appupdater.objects.Update&gt;"
+      final="false"
+      name="UtilsAsync.LatestAppVersion"
+      jni-signature="Lcom/github/javiersantos/appupdater/UtilsAsync$LatestAppVersion;"
+      source-file-name="UtilsAsync.java"
+      static="true"
+      visibility="">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="UtilsAsync.LatestAppVersion"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Ljava/lang/Boolean;Lcom/github/javiersantos/appupdater/enums/UpdateFrom;Lcom/github/javiersantos/appupdater/objects/GitHub;Ljava/lang/String;Lcom/github/javiersantos/appupdater/interfaces/IAppUpdater$LibraryListener;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="fromUtils"
+          type="java.lang.Boolean"
+          jni-type="Ljava/lang/Boolean;" />
+        <parameter
+          name="updateFrom"
+          type="com.github.javiersantos.appupdater.enums.UpdateFrom"
+          jni-type="Lcom/github/javiersantos/appupdater/enums/UpdateFrom;" />
+        <parameter
+          name="gitHub"
+          type="com.github.javiersantos.appupdater.objects.GitHub"
+          jni-type="Lcom/github/javiersantos/appupdater/objects/GitHub;" />
+        <parameter
+          name="xmlOrJsonUrl"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="listener"
+          type="com.github.javiersantos.appupdater.interfaces.IAppUpdater.LibraryListener"
+          jni-type="Lcom/github/javiersantos/appupdater/interfaces/IAppUpdater$LibraryListener;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="doInBackground"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="true"
+        synthetic="true"
+        jni-signature="([Ljava/lang/Object;)Ljava/lang/Object;">
+        <parameter
+          name="this"
+          type="java.lang.Object[]"
+          jni-type="[Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="doInBackground"
+        native="false"
+        return="com.github.javiersantos.appupdater.objects.Update"
+        jni-return="Lcom/github/javiersantos/appupdater/objects/Update;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([Ljava/lang/Void;)Lcom/github/javiersantos/appupdater/objects/Update;">
+        <parameter
+          name="voids"
+          type="java.lang.Void..."
+          jni-type="[Ljava/lang/Void;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onPostExecute"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/objects/Update;)V">
+        <parameter
+          name="update"
+          type="com.github.javiersantos.appupdater.objects.Update"
+          jni-type="Lcom/github/javiersantos/appupdater/objects/Update;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onPostExecute"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Ljava/lang/Object;)V">
+        <parameter
+          name="this"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onPreExecute"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="UtilsDisplay"
+      jni-signature="Lcom/github/javiersantos/appupdater/UtilsDisplay;"
+      source-file-name="UtilsDisplay.java"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lcom/github/javiersantos/appupdater/UtilsDisplay;"
+      enclosing-method-name="showUpdateNotAvailableDialog"
+      enclosing-method-signature="(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/support/v7/app/AlertDialog;"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="UtilsDisplay.1"
+      jni-signature="Lcom/github/javiersantos/appupdater/UtilsDisplay$1;"
+      source-file-name="UtilsDisplay.java"
+      static="true"
+      visibility="">
+      <implements
+        name="android.content.DialogInterface.OnClickListener"
+        name-generic-aware="android.content.DialogInterface.OnClickListener"
+        jni-type="Landroid/content/DialogInterface$OnClickListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onClick"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/DialogInterface;I)V">
+        <parameter
+          name="dialogInterface"
+          type="android.content.DialogInterface"
+          jni-type="Landroid/content/DialogInterface;" />
+        <parameter
+          name="i"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lcom/github/javiersantos/appupdater/UtilsDisplay;"
+      enclosing-method-name="showUpdateAvailableSnackbar"
+      enclosing-method-signature="(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Boolean;Lcom/github/javiersantos/appupdater/enums/UpdateFrom;Ljava/net/URL;)Landroid/support/design/widget/Snackbar;"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="UtilsDisplay.2"
+      jni-signature="Lcom/github/javiersantos/appupdater/UtilsDisplay$2;"
+      source-file-name="UtilsDisplay.java"
+      static="true"
+      visibility="">
+      <implements
+        name="android.view.View.OnClickListener"
+        name-generic-aware="android.view.View.OnClickListener"
+        jni-type="Landroid/view/View$OnClickListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onClick"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="UtilsLibrary"
+      jni-signature="Lcom/github/javiersantos/appupdater/UtilsLibrary;"
+      source-file-name="UtilsLibrary.java"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lcom/github/javiersantos/appupdater/UtilsLibrary;"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="UtilsLibrary.1"
+      jni-signature="Lcom/github/javiersantos/appupdater/UtilsLibrary$1;"
+      source-file-name="UtilsLibrary.java"
+      static="true"
+      visibility="" />
+  </package>
+  <package
+    name="com.github.javiersantos.appupdater.enums"
+    jni-name="com/github/javiersantos/appupdater/enums">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Enum;"
+      extends="java.lang.Enum"
+      extends-generic-aware="java.lang.Enum&lt;com.github.javiersantos.appupdater.enums.AppUpdaterError&gt;"
+      final="true"
+      name="AppUpdaterError"
+      jni-signature="Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;"
+      source-file-name="AppUpdaterError.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="valueOf"
+        native="false"
+        return="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+        jni-return="Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="values"
+        native="false"
+        return="com.github.javiersantos.appupdater.enums.AppUpdaterError[]"
+        jni-return="[Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="GITHUB_USER_REPO_INVALID"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="JSON_ERROR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="JSON_URL_MALFORMED"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NETWORK_NOT_AVAILABLE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="UPDATE_VARIES_BY_DEVICE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="XML_ERROR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="XML_URL_MALFORMED"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Enum;"
+      extends="java.lang.Enum"
+      extends-generic-aware="java.lang.Enum&lt;com.github.javiersantos.appupdater.enums.Display&gt;"
+      final="true"
+      name="Display"
+      jni-signature="Lcom/github/javiersantos/appupdater/enums/Display;"
+      source-file-name="Display.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="valueOf"
+        native="false"
+        return="com.github.javiersantos.appupdater.enums.Display"
+        jni-return="Lcom/github/javiersantos/appupdater/enums/Display;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/enums/Display;">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="values"
+        native="false"
+        return="com.github.javiersantos.appupdater.enums.Display[]"
+        jni-return="[Lcom/github/javiersantos/appupdater/enums/Display;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Lcom/github/javiersantos/appupdater/enums/Display;" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DIALOG"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.Display"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.Display"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/Display;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NOTIFICATION"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.Display"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.Display"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/Display;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="SNACKBAR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.Display"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.Display"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/Display;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Enum;"
+      extends="java.lang.Enum"
+      extends-generic-aware="java.lang.Enum&lt;com.github.javiersantos.appupdater.enums.Duration&gt;"
+      final="true"
+      name="Duration"
+      jni-signature="Lcom/github/javiersantos/appupdater/enums/Duration;"
+      source-file-name="Duration.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="valueOf"
+        native="false"
+        return="com.github.javiersantos.appupdater.enums.Duration"
+        jni-return="Lcom/github/javiersantos/appupdater/enums/Duration;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/enums/Duration;">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="values"
+        native="false"
+        return="com.github.javiersantos.appupdater.enums.Duration[]"
+        jni-return="[Lcom/github/javiersantos/appupdater/enums/Duration;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Lcom/github/javiersantos/appupdater/enums/Duration;" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="INDEFINITE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.Duration"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.Duration"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/Duration;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NORMAL"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.Duration"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.Duration"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/Duration;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Enum;"
+      extends="java.lang.Enum"
+      extends-generic-aware="java.lang.Enum&lt;com.github.javiersantos.appupdater.enums.UpdateFrom&gt;"
+      final="true"
+      name="UpdateFrom"
+      jni-signature="Lcom/github/javiersantos/appupdater/enums/UpdateFrom;"
+      source-file-name="UpdateFrom.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="valueOf"
+        native="false"
+        return="com.github.javiersantos.appupdater.enums.UpdateFrom"
+        jni-return="Lcom/github/javiersantos/appupdater/enums/UpdateFrom;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/enums/UpdateFrom;">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="values"
+        native="false"
+        return="com.github.javiersantos.appupdater.enums.UpdateFrom[]"
+        jni-return="[Lcom/github/javiersantos/appupdater/enums/UpdateFrom;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Lcom/github/javiersantos/appupdater/enums/UpdateFrom;" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="AMAZON"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.UpdateFrom"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.UpdateFrom"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/UpdateFrom;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="FDROID"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.UpdateFrom"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.UpdateFrom"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/UpdateFrom;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="GITHUB"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.UpdateFrom"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.UpdateFrom"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/UpdateFrom;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="GOOGLE_PLAY"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.UpdateFrom"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.UpdateFrom"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/UpdateFrom;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="JSON"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.UpdateFrom"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.UpdateFrom"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/UpdateFrom;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="XML"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.github.javiersantos.appupdater.enums.UpdateFrom"
+        type-generic-aware="com.github.javiersantos.appupdater.enums.UpdateFrom"
+        jni-signature="Lcom/github/javiersantos/appupdater/enums/UpdateFrom;"
+        visibility="public"
+        volatile="false" />
+    </class>
+  </package>
+  <package
+    name="com.github.javiersantos.appupdater.interfaces"
+    jni-name="com/github/javiersantos/appupdater/interfaces">
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="IAppUpdater"
+      jni-signature="Lcom/github/javiersantos/appupdater/interfaces/IAppUpdater;"
+      source-file-name="IAppUpdater.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="dismiss"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="true"
+        deprecated="deprecated"
+        final="false"
+        name="init"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/github/javiersantos/appupdater/AppUpdater;" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonDismiss"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonDismiss"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonDismissClickListener"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/DialogInterface$OnClickListener;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="android.content.DialogInterface.OnClickListener"
+          jni-type="Landroid/content/DialogInterface$OnClickListener;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonDoNotShowAgain"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonDoNotShowAgain"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonDoNotShowAgainClickListener"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/DialogInterface$OnClickListener;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="android.content.DialogInterface.OnClickListener"
+          jni-type="Landroid/content/DialogInterface$OnClickListener;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonUpdate"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonUpdate"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setButtonUpdateClickListener"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/DialogInterface$OnClickListener;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="android.content.DialogInterface.OnClickListener"
+          jni-type="Landroid/content/DialogInterface$OnClickListener;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setCancelable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Boolean;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.Boolean"
+          jni-type="Ljava/lang/Boolean;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setContentOnUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setContentOnUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setContentOnUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setContentOnUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogButtonDismiss"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogButtonDismiss"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogButtonDoNotShowAgain"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogButtonDoNotShowAgain"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogButtonUpdate"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogButtonUpdate"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogDescriptionWhenUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogDescriptionWhenUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogDescriptionWhenUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogDescriptionWhenUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogTitleWhenUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogTitleWhenUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogTitleWhenUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="deprecated"
+        final="false"
+        name="setDialogTitleWhenUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setDisplay"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/enums/Display;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="com.github.javiersantos.appupdater.enums.Display"
+          jni-type="Lcom/github/javiersantos/appupdater/enums/Display;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setDuration"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/enums/Duration;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="com.github.javiersantos.appupdater.enums.Duration"
+          jni-type="Lcom/github/javiersantos/appupdater/enums/Duration;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setGitHubUserAndRepo"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setIcon"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setTitleOnUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setTitleOnUpdateAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setTitleOnUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setTitleOnUpdateNotAvailable"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setUpdateFrom"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/enums/UpdateFrom;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="com.github.javiersantos.appupdater.enums.UpdateFrom"
+          jni-type="Lcom/github/javiersantos/appupdater/enums/UpdateFrom;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setUpdateJSON"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setUpdateXML"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="showAppUpdated"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Boolean;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.Boolean"
+          jni-type="Ljava/lang/Boolean;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="showEvery"
+        native="false"
+        return="com.github.javiersantos.appupdater.AppUpdater"
+        jni-return="Lcom/github/javiersantos/appupdater/AppUpdater;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Integer;)Lcom/github/javiersantos/appupdater/AppUpdater;">
+        <parameter
+          name="p0"
+          type="java.lang.Integer"
+          jni-type="Ljava/lang/Integer;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="start"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="stop"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </interface>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="IAppUpdater.LibraryListener"
+      jni-signature="Lcom/github/javiersantos/appupdater/interfaces/IAppUpdater$LibraryListener;"
+      source-file-name="IAppUpdater.java"
+      static="true"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onFailed"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;)V">
+        <parameter
+          name="p0"
+          type="com.github.javiersantos.appupdater.enums.AppUpdaterError"
+          jni-type="Lcom/github/javiersantos/appupdater/enums/AppUpdaterError;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onSuccess"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/objects/Update;)V">
+        <parameter
+          name="p0"
+          type="com.github.javiersantos.appupdater.objects.Update"
+          jni-type="Lcom/github/javiersantos/appupdater/objects/Update;" />
+      </method>
+    </interface>
+  </package>
+  <package
+    name="com.github.javiersantos.appupdater.objects"
+    jni-name="com/github/javiersantos/appupdater/objects">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="GitHub"
+      jni-signature="Lcom/github/javiersantos/appupdater/objects/GitHub;"
+      source-file-name="GitHub.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="GitHub"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="gitHubUser"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="gitHubRepo"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getGitHubRepo"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getGitHubUser"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isGitHubValid"
+        native="false"
+        return="java.lang.Boolean"
+        jni-return="Ljava/lang/Boolean;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/objects/GitHub;)Ljava/lang/Boolean;">
+        <parameter
+          name="gitHub"
+          type="com.github.javiersantos.appupdater.objects.GitHub"
+          jni-type="Lcom/github/javiersantos/appupdater/objects/GitHub;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setGitHubRepo"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="repo"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setGitHubUser"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="user"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="Update"
+      jni-signature="Lcom/github/javiersantos/appupdater/objects/Update;"
+      source-file-name="Update.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="Update"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="Update"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/Integer;)V">
+        <parameter
+          name="latestVersion"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="latestVersionCode"
+          type="java.lang.Integer"
+          jni-type="Ljava/lang/Integer;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="Update"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/net/URL;)V">
+        <parameter
+          name="latestVersion"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="latestVersionCode"
+          type="java.lang.Integer"
+          jni-type="Ljava/lang/Integer;" />
+        <parameter
+          name="releaseNotes"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="apk"
+          type="java.net.URL"
+          jni-type="Ljava/net/URL;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="Update"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;)V">
+        <parameter
+          name="latestVersion"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="releaseNotes"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="apk"
+          type="java.net.URL"
+          jni-type="Ljava/net/URL;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="Update"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/net/URL;)V">
+        <parameter
+          name="latestVersion"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="apk"
+          type="java.net.URL"
+          jni-type="Ljava/net/URL;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getLatestVersion"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getLatestVersionCode"
+        native="false"
+        return="java.lang.Integer"
+        jni-return="Ljava/lang/Integer;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/Integer;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getReleaseNotes"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getUrlToDownload"
+        native="false"
+        return="java.net.URL"
+        jni-return="Ljava/net/URL;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/net/URL;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setLatestVersion"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="latestVersion"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setLatestVersionCode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Integer;)V">
+        <parameter
+          name="versionCode"
+          type="java.lang.Integer"
+          jni-type="Ljava/lang/Integer;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setReleaseNotes"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="releaseNotes"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setUrlToDownload"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/net/URL;)V">
+        <parameter
+          name="apk"
+          type="java.net.URL"
+          jni-type="Ljava/net/URL;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="Version"
+      jni-signature="Lcom/github/javiersantos/appupdater/objects/Version;"
+      source-file-name="Version.java"
+      static="false"
+      visibility="public">
+      <implements
+        name="java.lang.Comparable"
+        name-generic-aware="java.lang.Comparable&lt;com.github.javiersantos.appupdater.objects.Version&gt;"
+        jni-type="Ljava/lang/Comparable&lt;Lcom/github/javiersantos/appupdater/objects/Version;&gt;;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="Version"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="version"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <exception
+          name="java/lang/Exception"
+          type="java.lang.Exception"
+          type-generic-aware="java.lang.Exception" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="compareTo"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/github/javiersantos/appupdater/objects/Version;)I">
+        <parameter
+          name="that"
+          type="com.github.javiersantos.appupdater.objects.Version"
+          jni-type="Lcom/github/javiersantos/appupdater/objects/Version;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="compareTo"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Ljava/lang/Object;)I">
+        <parameter
+          name="p0"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="that"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="get"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+  </package>
+</api>
